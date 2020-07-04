@@ -1,5 +1,5 @@
-import React from "react"
-import { graphql, useStaticQuery } from 'gatsby' 
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -9,14 +9,14 @@ const Footer = () => {
           author
         }
       }
-    } 
-  `)
+    }
+  `);
 
   return (
     <footer>
-      <p>Author:  {data.site.siteMetadata.author}</p>
+      <p>Author: {data.site.siteMetadata.author}</p>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

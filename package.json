@@ -14,16 +14,25 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.23.19",
+    "gatsby": "^2.23.20",
     "gatsby-plugin-sass": "^2.3.10",
     "gatsby-source-filesystem": "^2.3.18",
+    "gatsby-transformer-remark": "^2.8.23",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "env-cmd": "^10.1.0",
-    "prettier": "2.0.5"
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.3",
+    "prettier": "^2.0.5"
   },
   "repository": {
     "type": "git",
