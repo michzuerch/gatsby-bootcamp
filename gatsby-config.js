@@ -7,19 +7,19 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Portfolio",
-    author: "michzuerch",
+    title: 'Portfolio',
+    author: 'michzuerch',
   },
   plugins: [
-    "gatsby-plugin-sass",
+    'gatsby-plugin-sass',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "src",
+        name: 'src',
         path: `${__dirname}/src/`,
         ignore: [`**/\.*`],
       },
     },
-    "gatsby-transformer-remark",
+    'gatsby-transformer-remark',
   ],
 };
