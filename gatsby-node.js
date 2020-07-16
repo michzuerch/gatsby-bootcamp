@@ -12,7 +12,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
       value: slug,
     });
 
-    console.log('@@@@@@@@@@', slug);
+    // console.log('@@@@@@@@@@', slug);
   }
 };
 

@@ -9,6 +9,14 @@ module.exports = {
   siteMetadata: {
     title: 'Portfolio',
     author: 'michzuerch',
+    description: 'Personal portfolio',
+    siteUrl: 'https://michzuerch.github.io/',
+    social: [
+      {
+        name: 'github',
+        url: 'https://github.com/michzuerch',
+      },
+    ],
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -17,7 +25,7 @@ module.exports = {
       options: {
         name: 'src',
         path: `${__dirname}/src/`,
-        ignore: [`**/\.*`],
+        ignore: ['**/.*'],
       },
     },
     'gatsby-transformer-remark',
