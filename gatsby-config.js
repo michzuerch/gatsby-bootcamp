@@ -19,15 +19,22 @@ module.exports = {
     ],
   },
   plugins: [
-    'gatsby-plugin-sass',
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: 'gatsby-source-contentful',
       options: {
-        name: 'src',
-        path: `${__dirname}/src/`,
-        ignore: ['**/.*'],
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    'gatsby-plugin-sass',
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'src',
+    //     path: `${__dirname}/src/`,
+    //     ignore: ['**/.*'],
+    //   },
+    // },
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
